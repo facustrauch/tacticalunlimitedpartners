@@ -686,6 +686,7 @@ color: var(--grey);
 	width: 100%;
 	margin-bottom: 0px;
 	opacity: 0.85;
+	position:relative;
 }
 
 .project_link{
@@ -718,6 +719,13 @@ color: var(--grey);
 	align-self: flex-end;
 	width: 70px;
 	margin-bottom: 15px;
+}
+
+.insidelogo_animated{
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    width: 60px;
 }
 
 
