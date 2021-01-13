@@ -348,7 +348,7 @@ header .intro-text {
 	transition: all 0.5s;
 }
 
-@media (max-width: 550px){
+@media (max-width: 750px){
 	.flex-row-responsive{
 		flex-direction: column;
 	}
