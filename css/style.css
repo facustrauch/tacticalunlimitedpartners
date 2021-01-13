@@ -243,6 +243,24 @@ header .intro-text {
 }
 
 
+.flex{
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-row{
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-row-responsive{
+	display: flex;
+	flex-direction: row;
+}
+
+
+
+
 /* About Section */
 #about {
 	padding: 120px 0 0px 0;
@@ -274,6 +292,7 @@ header .intro-text {
 	width: 100%;
 	height: auto;
 }
+
 #about .about-text, #about .about-desc {
 	margin-bottom: 40px;
 }
@@ -292,7 +311,7 @@ header .intro-text {
 
 #services .service-media img {
 	position: relative;
-    width: 230px;
+    max-width: 230px;
     height: 230px;
     border-bottom: 10px solid var(--mainprimary);
     transition: all 0.5s;
@@ -328,6 +347,13 @@ header .intro-text {
 	opacity: 1;
 	transition: all 0.5s;
 }
+
+@media (max-width: 550px){
+	.flex-row-responsive{
+		flex-direction: column;
+	}
+}
+
 
 
 .team_title{
@@ -701,16 +727,6 @@ color: var(--grey);
 	.insideimage{
 		margin-bottom: 60px;
 	}
-}
-
-.flex{
-	display: flex;
-	flex-direction: column;
-}
-
-.flex-row{
-	display: flex;
-	flex-direction: row;
 }
 
 .insidelogo{
