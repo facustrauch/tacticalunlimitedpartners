@@ -134,7 +134,7 @@ hr {
     letter-spacing: 1px;
     padding: 8px 2px;
     border-radius: 0;
-    margin: 9px 15px 0 15px;
+    margin: 9px 5px 0 5px;
 }
 
 @media (min-width: 768px) {
@@ -319,9 +319,9 @@ header .intro-text {
 }
 /* Services Section */
 #services {
-	padding: 120px 0;
-	background: var(--maindark);
+	padding: 0 0;
 }
+
 #services .service-media {
 	margin: 10px;
 	display: flex;
@@ -387,6 +387,83 @@ header .intro-text {
 	opacity: 1;
 	transition: all 0.5s;
 }
+
+.core_one{
+	width: 100%;
+	height: 100vh;
+	background: var(--maindark) url(../img/services/sustainable-developments.jpg) center center no-repeat fixed;
+	background-size: cover;
+	display: flex;
+}
+
+.justify-content-center{
+	justify-content: center;
+}
+
+.container_service{
+	justify-content: center;
+}
+
+#core h3{
+	color: white;
+	font-size: 2em;
+}
+
+#core h2{
+	color: white;
+	font-size: 8em;
+	font-weight: 200;
+	line-height: 0.9;
+}
+
+#core p{
+	color: white;
+	font-size:18px;
+	width: 80%;
+}
+
+#core .more_info{
+	font-weight: 800;
+	text-align:right;
+	transform: translate(0px, 0px);
+	transition: all 0.5s;
+
+}
+
+#core .core_hover:hover .more_info{
+	font-weight: 800;
+	text-align:right;
+	transform: translate(20px, 0px);
+	transition: all 0.5s;
+}
+
+
+.core_two{
+	width: 100%;
+	height: 100vh;
+	background: var(--maindark) url(../img/services/economic-system.jpg) center center no-repeat fixed;
+	background-size: cover;
+	display: flex;
+}
+
+.core_three{
+	width: 100%;
+	height: 100vh;
+	background: var(--maindark) url(../img/services/innovative-ecosystem.jpg) center center no-repeat fixed;
+	background-size: cover;
+	display: flex;
+}
+
+.core_four{
+	width: 100%;
+	height: 100vh;
+	background: var(--maindark) url(../img/services/asset-develpment.jpg) center center no-repeat fixed;
+	background-size: cover;
+	display: flex;
+}
+
+
+
 
 @media (max-width: 750px){
 	.flex-row-responsive{
