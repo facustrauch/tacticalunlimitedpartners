@@ -548,6 +548,7 @@ ol.type li a:hover {
 .disp-inline{
 	display: inline;
 	width: 170px;
+	margin-bottom: 2em;
 }
 
 .owl-theme .owl-controls .owl-page span {
