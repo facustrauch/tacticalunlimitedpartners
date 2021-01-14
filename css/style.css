@@ -365,8 +365,18 @@ header .intro-text {
     font-weight: 400;
     padding: 0px 0;
 	margin: 0;
+	margin-bottom: 40px;
+}
+
+#services h4 {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 400;
+    padding: 0px 0;
+	margin: 0;
 	margin-bottom: 10px;
 }
+
 #services p {
 	color: rgba(255,255,255,0.9);
 }
