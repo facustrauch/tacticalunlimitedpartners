@@ -265,7 +265,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
-	padding: 2em 0em;
+
 }
 .intro .overlay {
 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,0077b6+100&0.6+0,0.4+100 */
@@ -274,7 +274,7 @@ background: -webkit-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,119,182,0.2)
 background: linear-gradient(to bottom,  rgba(0,0,0,0.2) 0%,rgba(0,119,182,0.2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#660077b6',GradientType=0 ); /* IE6-9 */
 min-height: 100vh;
-padding: 2em 0em;
+
 }
 .intro .fa {
 	font-size: 94px;
