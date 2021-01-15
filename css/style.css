@@ -1,7 +1,7 @@
 :root {
 	--background: #F9F9F9;
 	--mainprimary:   #09abe3;
-	--maindark: #0f5d7c;
+	--maindark: #0b3f92ff;
 	--mainlight: #90e0ef;
 	--secondarymain: #D7816A;
 	--black:  #000000;
@@ -9,7 +9,7 @@
 	--grey: #666666;
 	--darkgrey: #333333;
 	--gradient:#007cad;
-
+	/* Design by Facundo A. Strauch and Brian Corbalan */
 }
 
   .white{
@@ -116,6 +116,19 @@ hr {
 	}
 }
 
+@media (max-width: 992px) {
+	.logo_img {
+		height: 80%;
+		margin-top: 4px;
+	}
+}
+
+@media (max-width: 768px) {
+	.logo_img {
+		margin-left: 20px;
+	}
+}
+
 #menu.navbar-default {
 	background-color: rgba(248, 248, 248, 0);
 	border-color: rgba(231, 231, 231, 0);
@@ -134,14 +147,16 @@ hr {
     letter-spacing: 1px;
     padding: 8px 2px;
     border-radius: 0;
-    margin: 9px 5px 0 5px;
+    margin: 9px 15px 0 15px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 992px) {
 	#menu.navbar-default .navbar-nav > li > a {
-		margin: 9px 15px 0 15px;
+		margin: 9px 5px 0 5px;
 	}
 }
+
+
 
 #menu.navbar-default .navbar-nav > li > a:hover {
 	color: var(--mainprimary);
@@ -204,10 +219,40 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline: none;
 	outline-offset: none;
 }
+
+.btn-custom-in {
+	text-transform: uppercase;
+	color: var(--white);
+	background-color: transparent;
+	padding: 10px 20px;
+	letter-spacing: 1px;
+	margin: 0;
+	font-size: 17px;
+	font-weight: 400;
+	border-radius: 0px;
+	margin-top: 20px;
+	transition: all 0.3s;
+}
+.btn-custom-in:hover, .btn-custom-in:focus, .btn-custom-in.focus, .btn-custom-in:active, .btn-custom-in.active {
+	color: var(--white);
+	background-color: var(--mainprimary);
+}
+.btn:active, .btn.active {
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+	outline: none;
+	outline-offset: none;
+}
+
 /* Header Section */
 .intro {
 	display: table;
 	width: 100%;
+	height: 100vh;
 	padding: 0;
 	background: url(../img/intro-bg.jpg) top center no-repeat;
 	background-color: var(--background);
@@ -222,6 +267,7 @@ background: -moz-linear-gradient(top,  rgba(0,0,0,0.2) 0%, rgba(0,119,182,0.2) 1
 background: -webkit-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,119,182,0.2) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom,  rgba(0,0,0,0.2) 0%,rgba(0,119,182,0.2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#660077b6',GradientType=0 ); /* IE6-9 */
+height: 100vh;
 }
 .intro .fa {
 	font-size: 94px;
@@ -251,8 +297,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', e
 }
 
 header .intro-text {
-    padding-top: 220px;
-    padding-bottom: 182px;
+    padding-top: 210px;
     text-align: center;
 }
 .w100{
@@ -390,10 +435,11 @@ header .intro-text {
 
 .core_one{
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	background: var(--maindark) url(../img/services/sustainable-developments.jpg) center center no-repeat fixed;
 	background-size: cover;
 	display: flex;
+	padding: 2em 0em;
 }
 
 .justify-content-center{
@@ -405,22 +451,37 @@ header .intro-text {
 }
 
 #core h3{
-	color: white;
+	color: var(--white);
 	font-size: 2em;
 }
 
+@media (max-width: 768px) {
+	#core h3{
+	  font-size: 1.5em;
+	}
+  }
+
 #core h2{
-	color: white;
+	color: var(--white);
 	font-size: 8em;
 	font-weight: 200;
 	line-height: 0.9;
 }
 
 #core p{
-	color: white;
+	color:var(--white);
 	font-size:18px;
 	width: 80%;
+	margin-bottom: 0.75em;
 }
+
+@media (max-width: 992px) {
+	#core p{
+	  width: 100%;
+	  font-size: 16px;
+	}
+}
+  
 
 #core .more_info{
 	font-weight: 800;
@@ -440,26 +501,34 @@ header .intro-text {
 
 .core_two{
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	background: var(--maindark) url(../img/services/economic-system.jpg) center center no-repeat fixed;
 	background-size: cover;
 	display: flex;
+	padding: 2em 0em;
 }
 
 .core_three{
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	background: var(--maindark) url(../img/services/innovative-ecosystem.jpg) center center no-repeat fixed;
 	background-size: cover;
 	display: flex;
+	padding: 2em 0em;
 }
 
 .core_four{
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	background: var(--maindark) url(../img/services/asset-develpment.jpg) center center no-repeat fixed;
 	background-size: cover;
 	display: flex;
+	padding: 2em 0em;
+}
+
+.core_title{
+	width: 100%;
+	margin-bottom: 1em;
 }
 
 
@@ -611,24 +680,7 @@ ol.type li a:hover {
 	font-weight: 400;
 	line-height: 32px;
 }
-.linkedin{
-	color: var(--maindark);
-    font-size: 16px;
-    font-weight: 400;
-    padding: 8px 16px;
-    background: var(--background);
-    border: 0;
-    border-radius: 4px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-.linkedin:hover{
-	color: var(--white);
-    font-size: 16px;
-    font-weight: 400;
-    padding: 8px 16px;
-    background: var(--mainprimary);
-}
+
 .fs-18{
 	font-size: 18px;
 }
