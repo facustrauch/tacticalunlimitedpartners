@@ -1,7 +1,7 @@
 :root {
 	--background: #F9F9F9;
-	--mainprimary:   #09abe3;
-	--maindark: #0b3f92ff;
+	--mainprimary:   #47a6c0;
+	--maindark: #0e3987;
 	--mainlight: #90e0ef;
 	--secondarymain: #D7816A;
 	--black:  #000000;
@@ -167,8 +167,8 @@ hr {
 	color: var(--mainprimary);
 }
 .on {
-	background: -prefix-linear-gradient(left, var(--maindark),var(--gradient));
-	background: linear-gradient(to right, var(--maindark), var(--gradient)); !important;
+	background: -prefix-linear-gradient(left, var(--maindark),var(--maindark));
+	background: linear-gradient(to right, var(--maindark), var(--maindark)); !important;
 	padding: 0 !important;
 	padding: 15px 0 !important;
 }
