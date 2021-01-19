@@ -1,6 +1,6 @@
 :root {
 	--background: #F9F9F9;
-	--mainprimary:   #47a6c0;
+	--mainprimary:   #45c4e7;
 	--maindark: #0e3987;
 	--mainlight: #90e0ef;
 	--secondarymain: #D7816A;
@@ -732,8 +732,9 @@ ol.type li a:hover {
 }
 #contact h3 {
 	text-transform: uppercase;
-	font-size: 17px;
+	font-size: 22px;
 	font-weight: 600;
+	margin-top: 0.5em;
 }
 #contact .text-danger {
 	color: var(--secondarymain);
