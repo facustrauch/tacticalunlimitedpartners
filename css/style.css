@@ -395,6 +395,10 @@ header .intro-text {
 	margin-bottom: 2em;
 }
 
+.he-15em{
+	min-height: 15em;
+}
+
 #services .hover_opacity:hover .service-media img{
 	border-bottom: 10px solid var(--white);
 	transition: all 0.5s;
@@ -749,7 +753,7 @@ label {
 #contact .form-control {
 	display: block;
 	width: 100%;
-	padding: 20px 20px;
+	padding: 25px 25px;
 	font-size: 16px;
 	line-height: 1.42857143;
 	color: var(--darkgrey);
