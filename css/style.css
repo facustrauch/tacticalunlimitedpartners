@@ -8,12 +8,12 @@
 	--white: #FFFFFF;
 	--grey: #666666;
 	--darkgrey: #333333;
-	--gradient:#007cad;
+	--gradient:#009ece;
 	/* Design by Facundo A. Strauch and Brian Corbalan */
 }
 
   .white{
-	color: white;
+	color:var(--white);
   }
 
   .bold{
@@ -168,7 +168,7 @@ hr {
 }
 .on {
 	background: -prefix-linear-gradient(left, var(--maindark),var(--maindark));
-	background: linear-gradient(to right, var(--maindark), var(--maindark)); !important;
+	background: linear-gradient(to left, var(--maindark), var(--maindark)); !important;
 	padding: 0 !important;
 	padding: 15px 0 !important;
 }
@@ -303,7 +303,7 @@ min-height: 100vh;
 }
 
 header .intro-text {
-    padding-top: 210px;
+    padding: 8em 2em 5em 2em;
     text-align: center;
 }
 .w100{
@@ -330,41 +330,49 @@ header .intro-text {
 
 
 /* About Section */
-#about {
+#tup{
+	padding: 120px 0 0px 0;
+	background: -prefix-linear-gradient(right, var(--maindark),var(--gradient));
+	background: linear-gradient(to right, var(--maindark), var(--gradient)); !important;
+}
+#vision{
 	padding: 120px 0 0px 0;
 	background: var(--background);
 }
 .pb-80{
 	padding-bottom: 80px;
 }
-#about h3 {
+.pb-120{
+	padding-bottom: 80px;
+}
+#tup h3 {
 	font-size: 20px;
 	font-weight: 600;
 	margin: 20px 0 0 0;
 }
-#about .about-text span {
+#tup .about-text span {
 	color: var(--mainprimary);
 	font-weight: 700;
 	letter-spacing: -1px;
 }
-#about hr {
+#tup hr {
 	margin-left: 0;
 	margin-bottom: 40px;
 }
-#about .btn {
+#tup .btn {
 	margin-top: 40px;
 }
-#about .about-media img {
+#tup .about-media img {
 	position: relative;
 	display: block;
 	width: 100%;
 	height: auto;
 }
 
-#about .about-text, #about .about-desc {
+#tup .about-text, #tup .about-desc {
 	margin-bottom: 40px;
 }
-#about p {
+#tup p {
 	line-height: 24px;
 	margin-top: 10px;
 }
@@ -456,29 +464,34 @@ header .intro-text {
 	justify-content: center;
 }
 
+.align-center{
+	display: flex;
+	align-items: center;
+}
+
 .container_service{
 	justify-content: center;
 }
 
-#core h3{
+#expertise h3{
 	color: var(--white);
 	font-size: 2em;
 }
 
 @media (max-width: 768px) {
-	#core h3{
+	#expertise h3{
 	  font-size: 1.5em;
 	}
   }
 
-#core h2{
+#expertise h2{
 	color: var(--white);
 	font-size: 8em;
 	font-weight: 200;
 	line-height: 0.9;
 }
 
-#core p{
+#expertise p{
 	color:var(--white);
 	font-size:18px;
 	width: 80%;
@@ -486,14 +499,14 @@ header .intro-text {
 }
 
 @media (max-width: 992px) {
-	#core p{
+	#expertise p{
 	  width: 100%;
 	  font-size: 16px;
 	}
 }
   
 
-#core .more_info{
+#expertise .more_info{
 	font-weight: 800;
 	text-align:right;
 	transform: translate(0px, 0px);
@@ -501,7 +514,7 @@ header .intro-text {
 
 }
 
-#core .core_hover:hover .more_info{
+#expertise .core_hover:hover .more_info{
 	font-weight: 800;
 	text-align:right;
 	transform: translate(20px, 0px);
@@ -670,18 +683,18 @@ ol.type li a:hover {
 	opacity: 1;
 }
 /* Testimonials Section */
-#testimonials {
+#team {
 	background: var(--grey) url(../img/testimonials-bg.jpg) center center no-repeat fixed;
 	background-size: cover;
 }
-#testimonials .overlay {
+#team .overlay {
     padding: 120px 0px 90px 0px;
 	background: rgba(0, 119, 182, 0.85);
 }
-#testimonials h2 {
+#team h2 {
 	color: var(--white);
 }
-#testimonials hr {
+#team hr {
 	background: rgba(255,255,255,0.6);
 }
 #testimonial p {
@@ -794,7 +807,7 @@ color: var(--grey);
 	margin: 20px 0 40px 0;
 }
 
-#testimonials .mt0{
+#team .mt0{
 	margin-top: 15px;
 	margin-bottom: 50px;
 }
