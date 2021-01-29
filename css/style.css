@@ -16,6 +16,14 @@
 	color:var(--white);
   }
 
+  .maincolor{
+	  color: var(--mainprimary);
+  }
+
+  .maindark{
+	  color: var(--maindark);
+  }
+
   .bold{
 	  font-weight: 600;
   }
@@ -102,6 +110,10 @@ hr {
 .tx-center{
 	text-align: center;
 }
+.flex_end{
+	display: flex;
+	justify-content: flex-end;
+}
 
 
 /* Navigation */
@@ -128,7 +140,7 @@ hr {
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.logo_img {
 		margin-left: 20px;
 	}
@@ -187,7 +199,7 @@ hr {
 	background-color: var(--mainprimary);
 }
 .section-title {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 .section-title p {
 	font-size: 18px;
@@ -309,6 +321,14 @@ header .intro-text {
 .w100{
 	width: 100%;
 }
+.w95{
+	width: 95%;
+}
+@media (max-width: 767px) {
+	.w95{
+	  width: 100%;
+	}
+  }
 
 
 .flex{
@@ -462,6 +482,7 @@ header .intro-text {
 
 .justify-content-center{
 	justify-content: center;
+	display: flex;
 }
 
 .align-center{
@@ -478,7 +499,7 @@ header .intro-text {
 	font-size: 2em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	#expertise h3{
 	  font-size: 1.5em;
 	}
@@ -554,16 +575,11 @@ header .intro-text {
 	margin-bottom: 1em;
 }
 
-
-
-
 @media (max-width: 750px){
 	.flex-row-responsive{
 		flex-direction: column;
 	}
 }
-
-
 
 .team_title{
 	font-size: 26px;
@@ -751,7 +767,7 @@ ol.type li a:hover {
 	text-transform: uppercase;
 	font-size: 22px;
 	font-weight: 600;
-	margin-top: 0.5em;
+	margin-top: 0.9em;
 }
 #contact .text-danger {
 	color: var(--secondarymain);
@@ -810,6 +826,17 @@ color: var(--grey);
 #team .mt0{
 	margin-top: 15px;
 	margin-bottom: 50px;
+}
+
+
+.map{
+    margin-top: 2em;
+    margin-bottom: 3em;
+    width: 60%;
+}
+
+.float-right{
+	float: right;
 }
 /* Footer Section*/
 #footer {
