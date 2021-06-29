@@ -349,6 +349,8 @@ header .intro-text {
 
 
 
+
+
 /* About Section */
 #tup{
 	padding: 120px 0 0px 0;
@@ -396,6 +398,80 @@ header .intro-text {
 	line-height: 24px;
 	margin-top: 10px;
 }
+
+/* isdc Section */
+#isdc{
+	padding: 120px 0 0px 0;
+	background: -prefix-linear-gradient(right, var(--maindark),var(--gradient));
+	background: linear-gradient(to right, var(--maindark), var(--gradient)); !important;
+}
+
+#isdc h3 {
+	font-size: 20px;
+	font-weight: 600;
+	margin: 20px 0 0 0;
+}
+#isdc .about-text span {
+	color: var(--mainprimary);
+	font-weight: 700;
+	letter-spacing: -1px;
+}
+#isdc hr {
+	margin-left: 0;
+	margin-bottom: 40px;
+}
+#isdc .btn {
+	margin-top: 40px;
+}
+#isdc .about-media img {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+#isdc .about-text, #tup .about-desc {
+	margin-bottom: 40px;
+}
+#isdc p {
+	line-height: 24px;
+	margin-top: 10px;
+}
+
+#isdc .more_info{
+	font-weight: 800;
+	font-size: 18px;
+	text-align:right;
+	transform: translate(0px, 0px);
+	transition: all 0.5s;
+	color: var(--white);
+
+}
+
+#isdc .core_hover:hover .more_info{
+	font-weight: 800;
+	text-align:right;
+	transform: translate(20px, 0px);
+	transition: all 0.5s;
+	color: var(--mainprimary)
+}
+
+.padzero{
+	padding: 0;
+}
+
+.w32{
+	width: 32%;
+	padding: 15px;
+}
+
+.isdclogo{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 /* Services Section */
 #services {
 	padding: 0 0;
@@ -532,7 +608,6 @@ header .intro-text {
 	text-align:right;
 	transform: translate(0px, 0px);
 	transition: all 0.5s;
-
 }
 
 #expertise .core_hover:hover .more_info{
@@ -911,6 +986,19 @@ color: var(--grey);
 .inside_project{
 	padding-top: 110px;
     margin-bottom: 10px;
+}
+
+.inside_project_first{
+	padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+.mb-2em{
+	margin-bottom: 2em;
+}
+
+.mt-2em{
+	margin-top:2em;
 }
 
 .last{
