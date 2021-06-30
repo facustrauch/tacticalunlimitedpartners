@@ -1179,11 +1179,14 @@ color: var(--grey);
 	}
 
 	.mt-2em{
-		margin-top: -30px;
+		margin-top: 0px;
 	}
 
 	.w75-100{
 		width: 100%;
+	}
+	.insideimage{
+		margin-bottom: 25px;
 	}
 }
 
