@@ -456,7 +456,7 @@ header .intro-text {
 	color: var(--mainprimary)
 }
 
-.padzero{
+.padzero-noresponsive{
 	padding: 0;
 }
 
@@ -1151,6 +1151,22 @@ color: var(--grey);
 	width: 75%;
 }
 
+.feas-grid-img{
+	width: 100%;
+	margin-bottom: 0px;
+	position:relative;
+} 
+
+.padzero{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.padzero-responsive{
+	padding-left: 25px;
+}
+
+
 @media (max-width: 767px) {
 	.flex-row-spaceb {
 		flex-direction: column;
@@ -1168,5 +1184,12 @@ color: var(--grey);
 
 	.w75-100{
 		width: 100%;
+	}
+}
+
+@media (max-width: 992px) {
+	.padzero-responsive{
+		padding-right: 0px;
+		padding-left: 0px;
 	}
 }
