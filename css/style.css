@@ -1146,3 +1146,27 @@ color: var(--grey);
 .fivecol-tx{
 	margin-top: 10px;
 }
+
+.w75-100{
+	width: 75%;
+}
+
+@media (max-width: 767px) {
+	.flex-row-spaceb {
+		flex-direction: column;
+	}
+
+	.fivecol{
+		height: 340px;
+		width: 100%;
+		margin: 50px 0px 10px 00px;
+	}
+
+	.mt-2em{
+		margin-top: -30px;
+	}
+
+	.w75-100{
+		width: 100%;
+	}
+}
